@@ -1,5 +1,6 @@
 
 import matplotlib
+import pandas as pd
 print("Tere, Sandra!")
 matplotlib.use("Agg") #Et suudaks tekstiekraanil hakkama saada
 import matplotlib.pyplot as plt
@@ -15,4 +16,9 @@ plt.xlabel("mass")
 plt.ylabel("pikkus")
 ax.annotate("Kati", (60, 160))
 plt.savefig("sandra2.png")
+plt.clf()
+
+lapsed=pd.read_csv("http://www.tlu.ee/~jaagup/andmed/muu/5klass.txt")
+plt.hist(lapsed.pikkus)
+plt.savefig("sandra3.png")
 plt.clf()
