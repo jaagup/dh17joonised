@@ -1,0 +1,1 @@
+print(Minu joonised)
