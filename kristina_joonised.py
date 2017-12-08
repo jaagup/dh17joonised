@@ -7,6 +7,7 @@ plt.xticks ([1, 2, 3],["Juku", "Kati", "Mati"])
 plt.savefig("kristina1.png")
 plt.clf()
 
+fig, ax=plt.subplots()
 plt.scatter ([70, 60, 65], [170, 160, 180])
 plt.title("laste andmed")
 plt.xlabel("mass")
