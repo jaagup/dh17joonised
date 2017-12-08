@@ -1,4 +1,5 @@
 import matplotlib
+import pandas as pd
 print("test kristina")
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -14,4 +15,9 @@ plt.xlabel("mass")
 plt.ylabel("pikkus")
 ax.annotate("Kati", (60, 160))
 plt.savefig("kristina2.png")
+plt.clf()
+
+lapsed=pd.read_csv("http://www.tlu.ee/~jaagup/andmed/muu/5klass.txt")
+plt.hist(lapsed.pikkus)
+plt.savefig("kristina3.png")
 plt.clf()
