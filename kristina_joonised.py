@@ -18,6 +18,6 @@ plt.savefig("kristina2.png")
 plt.clf()
 
 lapsed=pd.read_csv("http://www.tlu.ee/~jaagup/andmed/muu/5klass.txt")
-plt.hist(lapsed.pikkus)
+plt.hist(lapsed.pikkus, 4)
 plt.savefig("kristina3.png")
 plt.clf()
