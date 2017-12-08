@@ -1,6 +1,7 @@
 #print("Tere, Kairi!")
 
 import matplotlib
+import pandas as pd
 print("Tere, Kairi!")
 matplotlib.use("Agg") #et suudaks tekstiekraanil hakkama saada
 import matplotlib.pyplot as plt
@@ -16,4 +17,9 @@ plt.xlabel("mass")
 plt.ylabel("pikkus")
 ax.annotate("Kati", (60,160))
 plt.savefig("kairi2.png")
+plt.clf()
+
+lapsed=pd.read_csv("http://www.tlu.ee/~jaagup/andmed/muu/5klass.txt")
+plt.hist(lapsed.pikkus)
+plt.savefig("kairi3.png")
 plt.clf()
