@@ -18,6 +18,6 @@ plt.savefig("jaagup2.png")
 plt.clf()
 
 lapsed=pd.read_csv("http://www.tlu.ee/~jaagup/andmed/muu/5klass.txt")
-plt.hist(lapsed.pikkus)
+plt.hist(lapsed.pikkus, 4) #soovitavalt 4 tulpa
 plt.savefig("jaagup3.png")
 plt.clf()
