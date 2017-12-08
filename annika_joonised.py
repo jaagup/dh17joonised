@@ -1,5 +1,5 @@
 import matplotlib
-print("Tere, mina olen Annika!")
+print("Tere, mina olen Annika!!")
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 plt.bar([1, 2, 3], [170, 160, 180])
